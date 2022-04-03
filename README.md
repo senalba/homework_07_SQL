@@ -185,7 +185,7 @@ Post a link to your GitHub repository in BootCamp Spot. The following should be 
 
 - [x] The `.sql` file of your table schemata.
 
-- [] The `.sql` file of your queries. See Next
+- [] The `.sql` file of your queries. See Next item.
 
 - [x] The `.ipynb` file of your queries.
 
