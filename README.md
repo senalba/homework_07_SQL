@@ -30,7 +30,7 @@ I didn't use:
 
 We created the database schema, imported the data from the corresponding CSV files. In Jupyter notebook we used several queries. Few examples of queries:
 
-* 
+* card_holder_transactions_df
 ```
 {
  SELECT cc.cardholder_id, t.date as hour, t.amount
@@ -41,7 +41,7 @@ WHERE cc.cardholder_id=18 OR
 }
 ```
 
-* 
+* card_holder_25_df
 ```
 {
  SELECT EXTRACT (MONTH FROM t.date) AS MONTH,
@@ -54,6 +54,20 @@ WHERE cc.cardholder_id=25 AND
 }
 ```
 
+* card_holder_25_df
+```
+{
+SELECT  cc.cardholder_id,
+    EXTRACT (MONTH FROM t.date) AS MONTH,
+    EXTRACT (DAY FROM t.date) AS DAY,
+    EXTRACT (HOUR FROM t.date) AS HOUR,
+    t.amount
+FROM transaction AS t 
+    JOIN credit_card AS cc
+        ON t.card=cc.card
+WHERE t.date BETWEEN '2018-01-01' AND '2018-07-01'
+}
+```
 
 
 ### Data Analysis
@@ -122,7 +136,7 @@ Use the [challenge starter notebook](Starter_Files/challenge.ipynb) to code two 
 
 * One that uses standard deviation to identify anomalies for any cardholder:
 
-    * Std-based outliers
+    - Std-based outliers
     ```
     {
      def find_outlier(data):
@@ -136,11 +150,12 @@ Use the [challenge starter notebook](Starter_Files/challenge.ipynb) to code two 
         return sorted(outliers)
     }
     ```
-    * Examples
+    - Examples
     ![STD outliers](Images/std_outliers.pdf)
 
 * Another that uses interquartile range to identify anomalies for any cardholder.
-    * Quantile-based outliers
+    
+    - Quantile-based outliers
     ```
     {
      def find_outlier_quantile(data):
@@ -157,7 +172,7 @@ Use the [challenge starter notebook](Starter_Files/challenge.ipynb) to code two 
     }
     ```
     
-    * Examples  
+    - Examples  
     ![Quantile outliers](Images/quantile_outliers.pdf)
 For help with outliers detection, read the following articles:
 
