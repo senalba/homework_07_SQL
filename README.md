@@ -94,13 +94,13 @@ WHERE t.date BETWEEN '2018-01-01' AND '2018-07-01'
 
 
   * I would like to analyse number of small stransactions during this time.
-    ![Small Early transaction distribution.](Images/small_transaction_distribution.pdf)
+    ![Small Early transaction distribution.](Images/small_transaction_distribution.png)
     We can see that distribution of the small amount transactions for early morning is different than for the remaining of the day. There is a peak around $1.5
 
   * During Early morning we see more potentially fraudulent transactions; both small and large. This is because during this time people are busy but awake, so transactions are possible, but people are too busy to monitor transactions.
 
 * What are the top 5 merchants prone to being hacked using small transactions?
-   ![Top fraudulent merchants and categories.](Images/merchants_distribution.pdf)
+   ![Top fraudulent merchants and categories.](Images/merchants_distribution.png)
 
 
 #### Part 2:
@@ -151,7 +151,7 @@ Use the [challenge starter notebook](Starter_Files/challenge.ipynb) to code two 
     }
     ```
     - Examples
-    ![STD outliers](Images/std_outliers.pdf)
+    ![STD outliers](Images/std_outliers.png)
 
 * Another that uses interquartile range to identify anomalies for any cardholder.
     
@@ -173,7 +173,7 @@ Use the [challenge starter notebook](Starter_Files/challenge.ipynb) to code two 
     ```
     
     - Examples  
-    ![Quantile outliers](Images/quantile_outliers.pdf)
+    ![Quantile outliers](Images/quantile_outliers.png)
 For help with outliers detection, read the following articles:
 
 
