@@ -29,6 +29,7 @@ I didn't use:
 
 
 We created the database schema, imported the data from the corresponding CSV files. In Jupyter notebook we used several queries. Few examples of queries:
+
 * 
 ```
 {
@@ -214,23 +215,23 @@ For comparing time and dates, take a look at the [date/time functions and operat
 
 ##### To receive all points, your code must:
 
-* Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-* Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-* Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-* Use concise logic and creative engineering where possible. (2 points)
+- [x] Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
+- [x] Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
+- [x] Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
+- [x] Use concise logic and creative engineering where possible. (2 points)
 
 #### Deployment and Submission (10 points)
 
 ##### To receive all points, you must:
 
-* Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-* Include appropriate commit messages in your files. (5 points)
+- [x] Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
+- [x] Include appropriate commit messages in your files. (5 points)
 
 #### Code Comments (10 points)
 
 ##### To receive all points, your code must:
 
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
+- [x] Be well commented with concise, relevant notes that other developers can understand. (10 points)
 
 ---
 
